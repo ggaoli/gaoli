@@ -1,0 +1,130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="Content-Language" content="zh-cn" />
+    <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <title>地理位置选择</title>
+
+
+    <link href="style/map.css" rel="stylesheet" type="text/css" />
+
+
+
+
+    <style>
+        .row {
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 0;
+            margin-bottom: 0;
+            width: 1000px;
+            z-index: auto;
+        }
+        .large-1 {
+            width: 8.3%; }
+        .large-2 {
+            width: 16.6%; }
+        .large-5 {
+            width: 41%; }
+        .columns{
+            float: left;
+            position: relative;
+        }
+        .padding-r {
+            padding-right: 20px !important;
+        }
+        .pad20 {
+            padding: 20px !important;
+            *margin-bottom: 20px;
+        }
+        .margin-t {
+            margin-top: 20px !important;
+        }
+        select:focus{
+            outline: none;
+        }
+        .map-pin-box input{
+            width: 415px !important;
+        }
+    </style>
+</head>
+<body>
+
+<div class="row  white-bg ">
+    <!--地图插件-->
+    <div class="pad20 clearfix" id="mapPick">
+        <div class="row margin-t area-select "  id="areaselct">
+            <!--hidden="hidden"-->
+            <div class="large-2 columns  " >
+                <div class="padding-r">
+                                     <span class="standard_select"><!--边框-->
+	                                          <span class="select_shelter"><!--遮挡默认边框-->
+                                                    <select class="city-province" name="province"></select>
+                                              </span>
+                                    </span>
+                </div>
+            </div>
+            <div class="large-2 columns ">
+                <div class="padding-r">
+                                      <span class="standard_select"><!--边框-->
+	                                          <span class="select_shelter"><!--遮挡默认边框-->
+                                                  <select class="city-city" name="city"></select>
+                                              </span>
+                                    </span>
+                </div>
+            </div>
+            <div class="large-2 columns ">
+                <div class="padding-r">
+                                      <span class="standard_select"><!--边框-->
+	                                          <span class="select_shelter"><!--遮挡默认边框-->
+                                                  <select class="city-district" name="district"></select>
+                                              </span>
+                                    </span>
+                </div>
+            </div>
+            <div class="large-5 columns">
+                <div class="map-pin-box">
+                    <a class="pic-map"></a>
+                    <input type="text" id="keyword" name="keyword" value="" onkeydown='keydown(event)'/>
+                    <div id="result1" name="result1" class="result-box"></div>
+                    <!--<span class=""><i class="fa fa-map-marker"></i></span>-->
+                    <div class="map-piker-show">
+                        <div id="mapContainer" ></div>
+                        <div class="map-annotation">
+                            <span class="annot1">点击地图可直接定位，拖动箭头到新的位置</span>
+                            <span class="annot2">收起</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+
+<script src="javascript/jquery-1.9.1.min.js"></script>
+<!--地图插件-->
+<script src="http://webapi.amap.com/maps?v=1.3&amp;key=a2627897194b5d9aad9b47e7db2227d5"></script>
+<script src="javascript/map.js" type="text/javascript" charset="utf8"></script>
+<script src="javascript/jquery.select-city.js" type="text/javascript" charset="utf8"></script>
+<script>
+    e.selectareas.init($('#mapPick'));
+</script>
+</body>
+</html>
