@@ -3,6 +3,7 @@
 ##兼容性
 - ie6+
 - ALL
+
 ##插件相关文件介绍
   - map.css：插件样式文件
   - jquery-1.9.1.min.js：插件使用的依赖文件
@@ -27,12 +28,19 @@
 ```    
 
 ###3、html中代码结构
+
 - 必要className、ID介绍
+- 
  ` mapPick、areaselct`：必要ID
+
  `map-pin-box`：地图外层容器
+ 
  `area-select` ：插件外层容器
+ 
  `city-province`：省份
+ 
  `city-city`：市区
+ 
  `city-district`：县级
 - html中代码结构
 ```
