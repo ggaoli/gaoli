@@ -33,7 +33,6 @@
 ###3、html中代码结构
 
 - 必要className、ID介绍
-- 
  ` mapPick、areaselct`：必要ID
 
  `map-pin-box`：地图外层容器
