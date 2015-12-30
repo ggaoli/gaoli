@@ -10,8 +10,11 @@
   - map.js：地图文件
   - jquery.select-city.js：城市三级联动选择文件
   - allareas.json：城市数据文件
+
 ##插件使用
+
 ###1、css文件引用
+
 ```
 <link href="style/map.css" rel="stylesheet" type="text/css" />
 ```     
